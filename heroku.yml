@@ -1,0 +1,11 @@
+setup:
+  addons:
+  - plan: heroku-postgresql:hobby-dev
+build:
+  docker:
+    web: Dockerfile
+release:
+  image: web
+  command:
+    - bin/rails generate_secret_token
+    - bin/rails db:fixtures:load

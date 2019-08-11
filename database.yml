@@ -1,0 +1,5 @@
+production:
+  # docker-entrypoint.sh uses adapter value to set up Gemfile.lock
+  adapter: postgresql
+
+  url: <%= ENV['DATABASE_URL'] %>
