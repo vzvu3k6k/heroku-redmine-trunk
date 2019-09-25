@@ -1,1 +1,1 @@
-gem 'sentry-raven'
+gem 'lograge'
