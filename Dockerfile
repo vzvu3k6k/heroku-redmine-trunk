@@ -1,4 +1,4 @@
-FROM vzvu3k6k/redmine:r18862
+FROM vzvu3k6k/redmine:r18872
 COPY database.yml additional_environment.rb config/
 COPY Gemfile.local Gemfile.local
 RUN git clone --depth 1 https://github.com/vzvu3k6k/heroku-redmine-trunk-updater.git plugins/heroku-redmine-trunk-updater
